@@ -10,26 +10,26 @@ body {
 	background-color: #242424;
 	font-family: 'Montserrat', sans-serif;
 }
-.container {
-	width: 100%;
-	height: 100%;
+.menu{
+	display: inline-block;
+	overflow-y: scroll;
 }
 nav {
 	position: fixed;
 	display: flex;
 	align-items: flex-start;
 	width: 23%;
-	height: 100%;
+	height: 99.8%;
 	background-color: #111;
 }
-main {
+#main {
 	position: fixed;
 	right: 0;
-	width: 80%;
+	width: 78.3%;
 	height: 100%;
 	color: #fff;
-	overflow: auto;
-	padding: 40px;
+	overflow: hidden;
+	background-color: #242424;
 }
 h1 {
 	font-weight: bold;

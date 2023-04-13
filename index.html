@@ -11,7 +11,7 @@
 	<div id="container">
 		<nav class="menu">
 			<ul>
-				<br><img src="imgs/godot-logo.png" style="width: 100%; display: block;" alt=""><br>
+				<br><img src="imgs/godot-logo.png" style="width: 50%; display: block; margin: 0 auto;" alt=""><br>
 				<input type="radio" name="menu" id="workflow" checked>
 				<li>
 					<label for="workflow" class="title"> 🖌 Рабочая среда</label>
@@ -64,7 +64,8 @@
 			</ul>
 		</nav>
 		<main id="main">
-			<h1>This is a vertical accordion menu only HTML and CSS</h1>
+			<h1 style = "margin-top: 5%;">Добро пожаловать в серию уроков по Godot!</h1>
+			<i><< Пожалуйста, выберите раздел</i>
 		</main>
 	</div>
 </body>
@@ -72,7 +73,8 @@
 	var title = document.getElementById("title");
 	var content = document.getElementById("content");
 	function loadContent(content){
-		document.getElementById("main").innerHTML = "<object type='text/html' data='lessons/" + content + "'></object>";
+		var text = "<object type='text/html' style='width:100%; height:99.5%' data='lessons/" + content + "'></object>";
+		document.getElementById("main").innerHTML = text;
 	}
 </script>
 </html>
