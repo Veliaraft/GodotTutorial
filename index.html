@@ -15,15 +15,15 @@
 				<input type="radio" name="menu" id="workflow" checked>
 				<li>
 					<label for="workflow" class="title"> 🖌 Рабочая среда</label>
-					<a href="content/page">Что такое Godot?</a>
-					<a href="#">Установка, создание проекта</a>
-					<a href="#">Интерфейс, настройка проекта</a>
-					<a href="#">Сцены, узлы, первый узел сцены</a>
+					<a onclick="loadContent('workflow/intro.html')" value="workflow/GodotIntro">Что такое Godot?</a>
+					<a onclick="loadContent('workflow/installing.html')">Установка, создание проекта</a>
+					<a onclick="loadContent('workflow/interface.html')">Интерфейс, настройка проекта</a>
+					<a onclick="loadContent('workflow/scenes.html')">Сцены, узлы, первый узел сцены</a>
 				</li>
 				<input type="radio" name="menu" id="programming">
 				<li>
 					<label for="programming" class="title"> ⌨️ Программирование</label>
-					<a href="#">GDScript - вводная информация</a>
+					<a onclick="" value="">GDScript - вводная информация</a>
 					<a href="#">Консоль, синтаксис, "Привет мир!"</a>
 					<a href="#">Переменные и типы данных</a>
 					<a href="#">Списки, словари</a>
@@ -63,7 +63,7 @@
 				</li>
 			</ul>
 		</nav>
-		<main class="main">
+		<main id="main">
 			<h1>This is a vertical accordion menu only HTML and CSS</h1>
 		</main>
 	</div>
@@ -71,5 +71,8 @@
 <script language="javascript">
 	var title = document.getElementById("title");
 	var content = document.getElementById("content");
+	function loadContent(content){
+		document.getElementById("main").innerHTML = "<object type='text/html' data='lessons/" + content + "'></object>";
+	}
 </script>
 </html>
