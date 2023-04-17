@@ -9,7 +9,7 @@
     <h1>Консоль, синтаксис, «Привет мир!».</h1>
     <p>На этом этапе было бы неплохо осмотреть синтаксис, и научить наш спрайт говорить. Пусть он поприветствует мир. На данный момент мы видим нечто следующее:</p>
     
-    <pre><code class="code"><hr style="border: 4px solid grey">extends Sprite
+    <pre><code class="code"><hr>extends Sprite
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -21,7 +21,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-<hr style="border: 4px solid dimgrey">
+<hr>
         </code>
     </pre>
 
@@ -31,14 +31,12 @@ func _ready():
     <div class="imagediv"><img src="imgs/testerror.png"></div>
     <p>В данном случае мы видим что ошибка допущена в первом символе третьей строки. Причина – Built-In-Func (создайте в функции). Это означает что мы пишем код не там где ему положено быть. </p>
     <p>В Godot каждый объект использует метод _notification. Его цель состоит в том, чтобы позволить объекту отвечать на обратные вызовы, предназначенные для него. Представьте, что движок – это Генерал, и каждая его команда, на которую отзываются солдаты – это обратный вызов. Командир произносит обратный вызов:</p>
-    <pre><code style="color: lightcoral"><hr style="border: 4px solid dimgrey">Напра-ВО!!!<hr style="border: 4px solid dimgrey">
-        </code>
-    </pre>
+    <pre><code style="color: lightcoral"><hr>Напра-ВО!!!<hr></code></pre>
     <p>И солдаты реагируют на обратный вызов</p>
-    <pre><code style="color: lightcoral"><hr style="border: 4px solid dimgrey">extends Sprite
+    <pre><code style="color: lightcoral"><hr>extends Sprite
 
 func _ready():
-	print(«Hello world!»)<hr style="border: 4px solid dimgrey"></code></pre>
+	print(«Hello world!»)<hr></code></pre>
     <p>Запускаем сцену. При запуске сцены под доком редактора кода, отобразится консоль. Теперь вы должны увидеть наше сообщение в этом окне:</p>
     <div class="imagediv"><img src="imgs/consoletest.png"></div>
     <p>Я обязан напомнить, что за вывод данного сообщения отвечает команда print().

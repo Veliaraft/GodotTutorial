@@ -11,5 +11,9 @@ img {
 }
 
 pre {
-    font-size: x-large;
+    font-size: large;
+}
+
+hr {
+    border: 2px solid dimgrey;
 }
