@@ -46,13 +46,18 @@
         if event.pressed and event.button_index == BUTTON_LEFT:
             if get_rect().has_point(to_local(event.position)):
                 $"../VBoxContainer".visible = true
+
                 $"../ColorRect".visible = true
+
             else:
                 $"../VBoxContainer".visible = false
+
                 $"../ColorRect".visible = false
-    elif Input.is_key_pressed(KEY_ESCAPE):
-        $"../VBoxContainer".visible = false
-        $"../ColorRect".visible = false
+
+            elif Input.is_key_pressed(KEY_ESCAPE):
+                $"../VBoxContainer".visible = false
+
+                $"../ColorRect".visible = false
 
 
 func _on_delete_pressed():

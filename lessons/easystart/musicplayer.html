@@ -74,7 +74,8 @@ func _process(delta):
     <p>Открываем скрипт узла «Control», и добавим туда ссылку на наш аудиоэффект:</p>
     <pre><code class="code"><hr>var spectrum: AudioEffectInstance
 func _ready():
-    spectrum = AudioServer.get_bus_effect_instance(0,0) # (Канал, номер эффекта)<hr></code></pre>
+    # Сперва указываем канал, после номер эффекта
+    spectrum = AudioServer.get_bus_effect_instance(0,0)<hr></code></pre>
     <p>Спектроанализатор не умеет самостоятельно разделять частоты, поэтому его необходимо этому научить. Для этого определим в начале скрипта несколько переменных отвечающих за конфигурацию спектров:</p>
     <pre><code class="code"><hr>const VU_CNT = 16.0	# Количество столбиков диаграммы
     const FRQMAX = 12000.0	# Максимальная анализируемая частота
