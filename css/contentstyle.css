@@ -18,3 +18,9 @@ pre {
 hr {
     border: 2px solid dimgrey;
 }
+
+.project_button {
+    float: right;
+    border-radius: 8px;
+    min-height: 30px;
+}
