@@ -12,6 +12,7 @@ img {
 
 pre {
     font-size: large;
+    white-space: break-spaces;
 }
 
 hr {
