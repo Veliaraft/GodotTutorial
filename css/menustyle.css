@@ -96,6 +96,7 @@ i {
 }
 #mobile-splash {
 	visibility: hidden;
+	height: 0%;
 }
 @media screen and (max-width: 600px){
 	nav {
