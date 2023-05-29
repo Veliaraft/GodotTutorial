@@ -1,6 +1,6 @@
-           Copyright (c) 2023 Kuznecov Yaroslav (aka Veliaraft)
+Copyright (c) 2023 Kuznecov Yaroslav (aka Veliaraft)
  
-                          zlib/libpng license
+zlib/libpng license
 
    This software is provided 'as-is', without any express or implied
 warranty. In no event will the authors be held liable for any damages
